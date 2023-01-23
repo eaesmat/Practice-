@@ -25,3 +25,20 @@
 .black-container-right-items div {
   padding-right: 10px;
 }
+
+/* Main heading section */
+.title-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 70px 0;
+}
+.heading{
+    font-size: 1.5rem;
+}
+
+/* Main image section */
+.main-image-section{
+    background: url();
+}
