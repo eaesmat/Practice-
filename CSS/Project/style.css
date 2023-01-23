@@ -1,0 +1,27 @@
+/* Reset borders */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Top black navbar sectino */
+.black-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px
+}
+.black-container-left-items {
+  display: flex;
+}
+.item2, .item3, .item4, .item5, .item6{
+  padding-left: 30px;
+}
+.black-container-right-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.black-container-right-items div {
+  padding-right: 10px;
+}
