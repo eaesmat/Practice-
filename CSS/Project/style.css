@@ -39,6 +39,55 @@ padding: 70px 0;
 }
 
 /* Main image section */
-.main-image-section{
-    background: url();
+.image-text-container{
+    background: url('./assets/images/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.title-one{
+    font-size: 2rem;
+}
+
+.title-two {
+    font-size: 4rem;
+}
+
+.btn {
+    background-color: rgb(209, 206, 206);
+    padding: 20px;
+    border:none;
+}
+.button, .title-two{
+padding-top: 40px;
+}
+
+/* Post section */
+
+.post-container {
+    display:flex;
+    padding-top: 2rem;
+    padding: 20px
+}
+.right-section{
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.left-section {
+    border: 1px solid blue;
+    flex-grow: 1;
+
+}
+
+.left-section .heading{
+    position: absolute;
+    left: 50%;
 }
