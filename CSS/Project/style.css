@@ -87,7 +87,12 @@ padding-top: 40px;
 
 }
 
-.left-section .heading{
-    position: absolute;
-    left: 50%;
+.left-section .item .post-heading{
+    text-align: center;
+    padding: 20px;
 }
+
+.left-section .item .post-image img{
+  width: 100%;
+}
+
