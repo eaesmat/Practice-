@@ -56,12 +56,28 @@ const friends = ['Esmatullah', 'Shafiqa', 'Hadia'];
 
 // Objects are entities haivng types and properties
 
-const person = ['Esmatullah', 29, 'Teacher'];
-console.log(person);
+// const person = ['Esmatullah', 29, 'Teacher'];
+// console.log(person);
 
-const array = []; // Square brackets
-const obj = {} // Object uses curly brackets
+// const array = []; // Square brackets
+// const obj = {} // Object uses curly brackets
 
-const Person = {A: 'Esmatullah', age: 29, job: 'Teacher'};
+// const Person = {A: 'Esmatullah', age: 29, job: 'Teacher'};
 
-console.log(Person);
+// console.log(Person);
+
+
+const car = {
+    name: 'Corolla',
+    model: 1999,
+    color: 'white',
+    countries: ['AFG', 'US', 'IN']
+}
+
+// Ways to access objects members
+// 1. Dot notation
+console.log(car.name, car.color, car.countries);
+
+// 2. brackets notation
+console.log(car['model']);
+
