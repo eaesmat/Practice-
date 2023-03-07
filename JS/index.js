@@ -36,20 +36,32 @@ const friends = ['Esmatullah', 'Shafiqa', 'Hadia'];
 // friends.push('Marwa');
 // const ret = friends.unshift('Marwa');
 // const ret = friends.shift();
-const ret = friends.includes('Marwa');
-console.log(friends, ret);
+// const ret = friends.includes('Marwa');
+// console.log(friends, ret);
 
-const numbers = [12, 23, 50, 90, 100, 999, 1000, 987, 682];
-const odd = [];
-const even = new Array();
+// const numbers = [12, 23, 50, 90, 100, 999, 1000, 987, 682];
+// const odd = [];
+// const even = new Array();
 
-for(let i = 0; i < numbers.length; i++) {
-    if(numbers[i] % 2 === 0) {
-        even.push(numbers[i]);
-    }
-    else {
-        odd.push(numbers[i]);
-    }
-}
+// for(let i = 0; i < numbers.length; i++) {
+//     if(numbers[i] % 2 === 0) {
+//         even.push(numbers[i]);
+//     }
+//     else {
+//         odd.push(numbers[i]);
+//     }
+// }
 
-console.log(even, odd);
+// console.log(even, odd);
+
+// Objects are entities haivng types and properties
+
+const person = ['Esmatullah', 29, 'Teacher'];
+console.log(person);
+
+const array = []; // Square brackets
+const obj = {} // Object uses curly brackets
+
+const Person = {A: 'Esmatullah', age: 29, job: 'Teacher'};
+
+console.log(Person);
