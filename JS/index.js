@@ -87,17 +87,21 @@ const friends = ['Esmatullah', 'Shafiqa', 'Hadia'];
 // car.width = '2m';
 // console.log(car);
 
-const car = {
-    name: 'Corolla',
-    model: 1999,
-    color: 'white',
-    countries: ['AFG', 'US', 'IN'],
-    active: true,
-    isStartng: () => car.name + ' is Starting'
+// const car = {
+//     name: 'Corolla',
+//     model: 1999,
+//     color: 'white',
+//     countries: ['AFG', 'US', 'IN'],
+//     active: true,
+//     isStartng: () => car.name + ' is Starting'
 
-}
+// }
 
-// console.log(car)
-console.log(car.isStartng())
+// // console.log(car)
+// console.log(car.isStartng())
 
+
+// for(var i = 0; i < 10; i++) {
+//     console.log('Hello' +i);
+// }
 
