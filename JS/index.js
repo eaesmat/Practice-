@@ -67,17 +67,37 @@ const friends = ['Esmatullah', 'Shafiqa', 'Hadia'];
 // console.log(Person);
 
 
+// const car = {
+//     name: 'Corolla',
+//     model: 1999,
+//     color: 'white',
+//     countries: ['AFG', 'US', 'IN']
+// }
+
+// // Ways to access objects members
+// // 1. Dot notation
+// console.log(car.name, car.color, car.countries);
+
+// // 2. brackets notation
+// console.log(car['model']);
+
+// console.log(car['height'] = '1M');
+// console.log(car);
+
+// car.width = '2m';
+// console.log(car);
+
 const car = {
     name: 'Corolla',
     model: 1999,
     color: 'white',
-    countries: ['AFG', 'US', 'IN']
+    countries: ['AFG', 'US', 'IN'],
+    active: true,
+    isStartng: () => car.name + ' is Starting'
+
 }
 
-// Ways to access objects members
-// 1. Dot notation
-console.log(car.name, car.color, car.countries);
+// console.log(car)
+console.log(car.isStartng())
 
-// 2. brackets notation
-console.log(car['model']);
 
