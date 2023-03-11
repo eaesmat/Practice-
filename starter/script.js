@@ -1,8 +1,13 @@
 'use strict';
 //Made a random number between 1 to 20
 let randomNumber = Math.trunc(Math.random() * 20) + 1;
-
 let highScore = 0;
+
+// make a function to display messages
+const displayMessage = function(message) {
+    document.querySelector('.message').textContent = message;
+
+}
 
 // make a variable to store the  max marks of the game
 let score = 20;
@@ -14,56 +19,41 @@ document.querySelector('.check').addEventListener('click', function () {
 
   // Check if the number is not empty
   if (!guessInput) {
-    document.querySelector('.message').textContent = 'Please enter number!';
+    displayMessage('Please enter number!')
   }
 
   // check if the guess and random numbers are matched
   else if (guessInput == randomNumber) {
-    document.querySelector('.message').textContent = 'Correct number!';
+    displayMessage('Correct number!')
     document.querySelector('body').style.backgroundColor = 'green';
     document.querySelector('.highscore').textContent = score;
 
     // check if the new score is higher
     if(score > highScore) {
         highScore = score
-        document.querySelector('.highscore').textContent =   highScore;
-    } else  {
-        document.querySelector('.highscore').textContent = highScore;
     }
-
-  }
+    document.querySelector('.highscore').textContent = highScore;
+}
 
   // check if the number is higher
-  else if (guessInput > randomNumber) {
-    document.querySelector('.message').textContent = 'Very High!';
-
-
-    // check if the numnber is lower than 1
-    if (score > 0) {
-      score--;
-      document.querySelector('.score').textContent = score;
+  else if (guessInput != randomNumber) {
+    // check lower and higer scores
+    if(guessInput < randomNumber)
+    {
     }
     else {
-        document.querySelector('.message').textContent = 'Lost the game';
-        document.querySelector('body').style.backgroundColor = 'red';
     }
-  }
-
-  // check if the number lower
-  else if (guessInput < randomNumber) {
-    document.querySelector('.message').textContent = 'Very Low!';
-
-
     // check if the numnber is lower than 1
     if (score > 0) {
         score--;
         document.querySelector('.score').textContent = score;
-      }
-      else {
-          document.querySelector('.message').textContent = 'Lost the game';
-
-      }
+    }
+    else {
+        displayMessage('Lost the game!')
+        document.querySelector('body').style.backgroundColor = 'red';
+    }
   }
+
 });
 
 
@@ -75,61 +65,7 @@ document.querySelector('.again').addEventListener('click', function(){
     randomNumber = Math.trunc(Math.random() * 20) + 1;
     document.querySelector('.guess').value = '';
     document.querySelector('.score').textContent = 0;
-
     document.querySelector('body').style.backgroundColor =  '#222';
-
-    if (!guessInput) {
-        document.querySelector('.message').textContent = 'Please enter number!';
-      }
-
-      // check if the guess and random numbers are matched
-      else if (guessInput == randomNumber) {
-        document.querySelector('.message').textContent = 'Correct number!';
-        document.querySelector('body').style.backgroundColor = 'green';
-
-
-        // check if the new score is higher
-        if(score > highScore) {
-            highScore = score
-            document.querySelector('.highscore').textContent =   highScore;
-        } else  {
-            document.querySelector('.highscore').textContent = highScore;
-        }
-
-      }
-
-      // check if the number is higher
-      else if (guessInput > randomNumber) {
-        document.querySelector('.message').textContent = 'Very High!';
-
-
-        // check if the numnber is lower than 1
-        if (score > 0) {
-          score--;
-          document.querySelector('.score').textContent = score;
-        }
-        else {
-            document.querySelector('.message').textContent = 'Lost the game';
-            document.querySelector('body').style.backgroundColor = 'red';
-        }
-      }
-
-      // check if the number lower
-      else if (guessInput < randomNumber) {
-        document.querySelector('.message').textContent = 'Very Low!';
-
-
-        // check if the numnber is lower than 1
-        if (score > 0) {
-            score--;
-            document.querySelector('.score').textContent = score;
-          }
-          else {
-              document.querySelector('.message').textContent = 'Lost the game';
-
-          }
-      }
-
 
 })
 
