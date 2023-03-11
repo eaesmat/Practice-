@@ -20,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
   // check if the guess and random numbers are matched
   else if (guessInput == randomNumber) {
     document.querySelector('.message').textContent = 'Correct number!';
+    document.querySelector('body').style.backgroundColor = 'green';
   }
 
   // check if the number is higher
@@ -34,6 +35,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
     else {
         document.querySelector('.message').textContent = 'Lost the game';
+        document.querySelector('body').style.backgroundColor = 'red';
     }
   }
 
@@ -49,6 +51,7 @@ document.querySelector('.check').addEventListener('click', function () {
       }
       else {
           document.querySelector('.message').textContent = 'Lost the game';
+
       }
   }
 });
