@@ -1,0 +1,10 @@
+1. If the user input is empty require them for an iput.
+2. Define a random number generator to have a  number between 1 to 20.
+3. Match the user input with the random number
+4. If the numbers are matched make a wining message.
+5. If the user input is higher or lower than the random number give a message.
+6. If the guess is wrong decrease the 20 score by 1.
+7. If the score goes to the one game over.
+8. If guess right or wrong change body bg colors.
+9. Using again button reset the game except high score.
+10. If new score is higher than the pervious make the new score as high score.
