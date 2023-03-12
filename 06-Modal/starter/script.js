@@ -18,4 +18,5 @@ for(let modalItem = 0; modalItem < modalShowBtns.length; modalItem++) {
     modalShowBtns[modalItem].addEventListener('click',showModal)
 }
 modalCloseBtn.addEventListener('click', hideModal)
+overlay.addEventListener('click', hideModal)
 
