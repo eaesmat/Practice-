@@ -5,7 +5,17 @@ const modal = document.querySelector('.modal');
 const modalCloseBtn = document.querySelector('.close-modal');
 const overlay = document.querySelector('.overlay');
 
-for(let modalItem = 0; modalItem < modalShowBtns.length; modalItem++) {
-    console.log(modalShowBtns[modalItem].textContent);
+const showModal = function() {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
 }
+
+const hideModal = function() {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+for(let modalItem = 0; modalItem < modalShowBtns.length; modalItem++) {
+    modalShowBtns[modalItem].addEventListener('click',showModal)
+}
+modalCloseBtn.addEventListener('click', hideModal)
 
