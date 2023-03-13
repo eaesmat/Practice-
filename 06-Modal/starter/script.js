@@ -17,6 +17,11 @@ const hideModal = function() {
 for(let modalItem = 0; modalItem < modalShowBtns.length; modalItem++) {
     modalShowBtns[modalItem].addEventListener('click',showModal)
 }
-modalCloseBtn.addEventListener('click', hideModal)
-overlay.addEventListener('click', hideModal)
+modalCloseBtn.addEventListener('click', hideModal);
+overlay.addEventListener('click', hideModal);
+
+document.addEventListener('keydown', function() {
+    // console.log(e.key);
+    console.log('key pressed');
+})
 
